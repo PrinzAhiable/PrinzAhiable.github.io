@@ -79,7 +79,7 @@ export default {
           description: "Showcase of my work and skills",
           headerColor: "linear-gradient(to bottom, #8e44ad, #1e1e1e)",
           tech: ["Vue.js", "SCSS", "GSAP"],
-          demo: "#",
+          demo: "https://prinzahiable.github.io/",
         },
         {
           title: "Blog App",
