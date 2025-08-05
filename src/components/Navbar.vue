@@ -9,13 +9,14 @@
       <div class="logo">Prince's Portfolio</div>
 
       <!-- Navigation Links -->
-      <div class="nav-links" :class="{ show: showNav }">
-        <router-link to="/" @click="hideNav">Home</router-link>
-        <router-link to="/about" @click="hideNav">About</router-link>
-        <router-link to="/projects" @click="hideNav">Projects</router-link>
-        <router-link to="/skills" @click="hideNav">Skills</router-link>
-        <router-link to="/contact" @click="hideNav">Contact</router-link>
-      </div>
+     <div class="nav-links" :class="{ show: showNav }">
+  <a href="#home" @click="hideNav">Home</a>
+  <a href="#about" @click="hideNav">About</a>
+  <a href="#projects" @click="hideNav">Projects</a>
+  <a href="#skills" @click="hideNav">Skills</a>
+  <a href="#contact" @click="hideNav">Contact</a>
+</div>
+
     </div>
   </nav>
 </template>
@@ -32,8 +33,7 @@ function hideNav() {
 
 <style scoped>
 /* ===== Base Navbar Styles ===== */
-.navbar {
-  background: rgba(17, 17, 17, 0.3);
+.navbar {  background: linear-gradient(135deg, #0e0e2c, #1f1f47);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);

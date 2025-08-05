@@ -26,11 +26,11 @@
         <p data-aos="fade-up" data-aos-delay="200">
           I believe in the power of clean code, intuitive design, and continuous learning.
           When I'm not coding, you can find me exploring new technologies, contributing to
-          open-source projects, or mentoring aspiring developers.
+          open-source projects.
         </p>
         <div class="stats">
           <div class="stat" data-aos="flip-left">
-            <strong>10+</strong><br />Projects Completed
+            <strong>5+</strong><br />Projects Completed
           </div>
           <div class="stat" data-aos="flip-left" data-aos-delay="100">
             <strong>3+</strong><br />Years Experience
