@@ -11,11 +11,14 @@
         <h2>Let's Connect</h2>
         <ul>
           <li>
-            <i class="fas fa-envelope"></i> <span>Email</span><br />ahiableprinz@gmail.com
+            <i class="fas fa-envelope"></i> <span>Email</span><br />
+            <a href="mailto:ahiableprinz@gmail.com" class="contact-link">
+              ahiableprinz@gmail.com
+            </a>
           </li>
-          <li><i class="fas fa-phone"></i> <span>Phone</span><br />+233 554 948 718</li>
           <li>
-            <i class="fas fa-map-marker-alt"></i> <span>Location</span><br />HO, VR, Ghana
+            <i class="fas fa-phone"></i> <span>Phone</span><br />
+            <a href="tel:+233554948718" class="contact-link"> +233 554 948 718</a>
           </li>
         </ul>
 
@@ -88,6 +91,17 @@ export default {
   max-width: 600px;
   margin: 0 auto 3rem;
   font-size: 0.95rem;
+}
+
+.contact-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-link:hover {
+  color: #7d5fff;
+  text-decoration: underline;
 }
 
 .contact-content {

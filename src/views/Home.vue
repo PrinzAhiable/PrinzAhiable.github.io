@@ -1,9 +1,11 @@
 <template>
   <section class="home">
     <div class="container" ref="container">
-      <div class="profile-image">Profile</div>
-      <h1><span class="name-highlight">Frontend Developer</span></h1>
-      <h2>Full Stack Developer &amp; UI/UX Designer</h2>
+      <div class="profile-image">
+        <img :src="profileImage" alt="my picture" />
+      </div>
+      <h1><span class="name-highlight">Prince Ahiable</span></h1>
+      <h2>Frontend Developer &amp; UI/UX Designer</h2>
       <p class="intro">Passionate about creating innovative digital solutions...</p>
 
       <div class="buttons">
@@ -35,6 +37,8 @@ import { ref, onMounted } from "vue";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
+
+import profileImage from "../assets/images/my image.jpg";
 
 const container = ref(null);
 
@@ -74,17 +78,24 @@ onMounted(() => {
 }
 
 .profile-image {
-  width: 100px;
-  height: 100px;
+  width: 120px; /* slightly bigger for a better look */
+  height: 120px;
   margin: 1rem auto;
   border-radius: 50%;
-  background: #4b00ff;
+  background: none;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 3px solid #fff;
-  font-weight: bold;
-  font-size: 1rem;
+  overflow: hidden; /* ensures the image is clipped inside the circle */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keeps aspect ratio without stretching */
+  border-radius: 50%;
 }
 
 .name-highlight {
