@@ -18,7 +18,18 @@
           </li>
           <li>
             <i class="fas fa-phone"></i> <span>Phone</span><br />
-            <a href="tel:+233554948718" class="contact-link"> +233 554 948 718</a>
+            <a href="tel:+233554948718" class="contact-link"> +233 554 948 718 </a>
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt"></i> <span>Location</span><br />
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Ho+Volta+Region+Ghana"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-link"
+            >
+              Ho , Volta Region , Ghana
+            </a>
           </li>
         </ul>
 
