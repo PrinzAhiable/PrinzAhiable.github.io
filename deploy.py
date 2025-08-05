@@ -11,7 +11,7 @@ def deploy():
     run_command("npm run build")
     run_command("git add .")
     run_command("git add dist -f")
-    run_command("git commit -m \"Add to github and deploy\"")
+    run_command("git commit -m \"updated and deployed\"")
     run_command("git subtree push --prefix dist origin gh-pages")
     run_command("git push")
 
